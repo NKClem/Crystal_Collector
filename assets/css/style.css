@@ -55,7 +55,7 @@ section {
 	width: 175px;
 	height: 175px;
 	float: left;
-	margin-left: 25%;
+	margin-left: 250px;
 }
 
 aside {
@@ -63,7 +63,7 @@ aside {
 	width: 175px;
 	height: 175px;
 	float: right;
-	margin-right: 25%;
+	margin-right: 250px;
 }
 
 #wins, #losses {
@@ -71,7 +71,7 @@ aside {
 }
 
 #message {
-	height: 30%;
+	height: 60px;
 	font-size: 24px;
 	font-weight: bold;
 	text-align: center;
@@ -133,36 +133,60 @@ a {
 	color: #a0f6bc;
 }
 
-/* media query 
+/*media query*/
 
 @media only screen and (max-width: 768px) {
-    #wrapper {
-        width: 768px;
-    }
 
-	section, aside {
-		float: none;
-		margin: 10px 0;
-	}
+	#heading {
+		margin: 0 130px;
+	} 
 
-	#directions-and-game {
-		overflow: auto;
-	}
-	
 	article {
-		margin: 20px 0;
-		float: left;
+		margin: 20px 80px;
 	}
 
-	#game-content {
-		overflow: none;
-		float: right;
+	section {
+		margin-left: 20px;
 	}
-
 
 	#crystal-buttons {
-		width: 90%;
-		margin: 100px 20px 0px 20px;
-		overflow: auto;
+		margin: 30px 80px;
 	}
-}    */
+}    
+
+@media only screen and (max-width: 640px) {
+	#wrapper {
+		width: 640px;
+	}
+
+	#heading {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	article {
+		margin-top: 10px;
+		margin-bottom: 0;
+		height: 420px;
+	}
+
+	#crystal-buttons {
+		width: 100%;
+		margin-top: 10px;
+		margin-left: 0;
+	}
+
+	section, aside {
+		margin-top: 10px;
+	}
+
+	section {
+		margin-left: 60px;
+		margin-right: 0;
+	}
+
+	aside {
+		margin-left: 0;
+		margin-right: 150px;
+	}
+}
