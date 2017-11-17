@@ -1,0 +1,71 @@
+<DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	
+	<!-- Link CSS Normalize file -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<!-- Link CSS file -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- Media Query -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Crystal Collector Game</title>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<h1 id="heading">Crystal Collector!</h1>
+		<div class="directions-and-game">
+			<article>
+				<h3>Directions:</h3>
+				<p>You will be given a random number at the start of the game.</p>
+				<p>There are four crystals below.  By clicking on a crystal, you will add a specific amount of points to your total score.</p>
+				<p>You win the game by matching your total score to a random number; you lose the game if your total score goes above the random number.</p>
+				<p>The value of each crystal is hidden from you until you click on it.</p>
+				<p>Each time the game starts, the value of the crystals will change, as well as the random number.</p>
+				<p>The number to guess has been generated.  Click on a crystal to begin playing!</p>
+			</article>
+			<div id="game-content">
+				<section>
+					<div id="message"></div>
+					<div id="wins">
+						<h3 id="wins-head">Wins: </h3>
+						<h3 id="number-of-wins"></p>
+					</div>
+					<div id="losses">
+						<h3 id="losses-head">Losses:</h3>
+						<h3 id="number-of-losses"></p>
+					</div>
+				</section>
+				<aside>
+					<h1 id="computer-number"></h1>
+				</aside>
+			</div>
+		</div>
+			<div id="crystal-buttons">
+				<img id="button1" class="crystal" src="assets/images/crystal1.JPG" alt="white crystal">
+				<img id="button2" class="crystal" src="assets/images/crystal2.JPG" alt="purple crystal">
+				<img id="button3" class="crystal" src="assets/images/crystal3.JPG" alt="orange crystal">
+				<img id="button4" class="crystal" src="assets/images/crystal4.JPG" alt="green crystal">
+		
+				<div id="score">
+					<h3 id="score-head">Your score is: </h3>
+					<p id="user-score">75</p>
+				</div>
+			</div>
+	</div>
+	<footer>
+		<p id="credit-freepik"><small><a href='https://www.freepik.com/free-vector/collection-of-brilliant-diamonds_1077116.htm'>Crystal Vectors Designed by Freepik</a></small></p>
+		<p id="personal-copyright"><small>&copy Game by Nicole Clements 2017</small></p>
+	</footer>
+
+<!-- JQuery Link -->
+	<script src="assets/javascript/game.js">
+  </script>
+</body>
+
+</html>
