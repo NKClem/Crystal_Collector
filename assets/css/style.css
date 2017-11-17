@@ -1,0 +1,192 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	position: relative;
+	background-image: url("../images/dark-embroidery.PNG");
+	font-size: 18px;
+}
+
+#wrapper {
+	width: 960px;
+	height: 100%;
+	margin: 0 auto;
+	margin-bottom: -40px;
+}
+
+#heading {
+	background-color: #a0f6bc;
+	text-align: center;
+	width: 50%;
+	height: 8%;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+
+h1 {
+	font-size: 45px;
+	font-weight: bold;
+} 
+
+h3 {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+article {
+	background-color: #c6e8f9;
+	text-align: center;
+	width: 60%;
+	height: 350px;
+	margin: 20px auto;
+	padding: 10px;
+}
+
+p {
+	padding: 10px;
+}
+
+#game-content {
+	overflow: auto;
+}
+section {
+	background-color: #f6bca0;
+	width: 175px;
+	height: 175px;
+	float: left;
+	margin-left: 250px;
+}
+
+aside {
+	background-color: #dfd1fa;
+	width: 175px;
+	height: 175px;
+	float: right;
+	margin-right: 250px;
+}
+
+#wins, #losses {
+	overflow: auto;
+}
+
+#message {
+	height: 60px;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 20px;
+}
+
+#wins-head, #losses-head {
+	width: 40%;
+	float: left;
+	margin-left: 10px;
+	padding: 10px 0;
+}
+
+#number-of-wins, #number-of-losses {
+	width: 40%;
+	float: right;
+	margin-right: 10px;
+	padding: 10px 0;
+}
+
+#computer-number {
+	text-align: center;
+	padding-top: 60px;
+}
+
+#crystal-buttons {
+	background-color: white;
+	width: 60%;
+	height: 200px;
+	margin: 20px auto;
+	text-align: center;
+}
+
+#user-score {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 20px;
+}
+
+#button1, #button2, #button3, #button4 {
+	padding: 10px 20px;
+}
+footer {
+	color: #a0f6bc;
+	margin-top: 10px;
+	overflow: auto;
+}
+
+#credit-freepik {
+	float: left;
+}
+
+#personal-copyright {
+	float: right;
+}
+
+a {
+	color: #a0f6bc;
+}
+
+/*media query*/
+
+@media only screen and (max-width: 768px) {
+
+	#heading {
+		margin: 0 130px;
+	} 
+
+	article {
+		margin: 20px 80px;
+	}
+
+	section {
+		margin-left: 20px;
+	}
+
+	#crystal-buttons {
+		margin: 30px 80px;
+	}
+}    
+
+@media only screen and (max-width: 640px) {
+	#wrapper {
+		width: 640px;
+	}
+
+	#heading {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	article {
+		margin-top: 10px;
+		margin-bottom: 0;
+		height: 420px;
+	}
+
+	#crystal-buttons {
+		width: 100%;
+		margin-top: 10px;
+		margin-left: 0;
+	}
+
+	section, aside {
+		margin-top: 10px;
+	}
+
+	section {
+		margin-left: 60px;
+		margin-right: 0;
+	}
+
+	aside {
+		margin-left: 0;
+		margin-right: 150px;
+	}
+}
